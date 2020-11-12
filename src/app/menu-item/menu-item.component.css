@@ -1,0 +1,12 @@
+li{
+    display: inline;
+}
+a{
+    color: black;
+    text-decoration: none;
+    padding: 0 124px;
+}
+a:hover{
+background-color: black;
+color: white;
+}

@@ -1,0 +1,21 @@
+<app-menu></app-menu>
+
+<h1>List of Students</h1>
+
+<div>
+  <button [ngClass]="btnStyle" (click)= "getStudents()">Get the Students</button>
+  || <button (click)= "changeColor()">Change Color</button>
+</div>
+<table class= "table table-sm">
+  <tr>
+    <th>Name</th>
+    <th>Number</th>
+    <th>Color</th>
+  </tr>
+  <tr *ngFor="let student of students" 
+      [hidden]="student.favColor == 'Green'">
+    <td>{{student.name}}</td>
+    <td>{{student.favNumber}}</td>
+    <td>{{student.favColor}}</td>
+  </tr>
+</table>
